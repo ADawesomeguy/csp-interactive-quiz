@@ -4,7 +4,6 @@ import tkinter as tk # Used for UI
 from tkinter import messagebox # Used to display the message of the result
 from data import getData # Custom functino to get quiz data stored in another fle
 
-
 '''
 Init vars
 '''
@@ -23,7 +22,7 @@ Frames to be raised over one another
 quizTypeFrame = tk.Frame(root) # Initial quiz type question
 questionsFrame = tk.Frame(root) # Questions from the quiz itsel
 
-for frame in (quizTypeFrame, questionsFrame):
+for frame in [quizTypeFrame, questionsFrame]:
     frame.grid(row=0, column=0, sticky='news') # Add all the frames to the grid
 
 '''
